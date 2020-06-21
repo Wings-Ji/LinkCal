@@ -54,7 +54,7 @@ def geoHeatmap():
         )
         .render('GeoHeatMap_test.html')
     )
-    webbrowser.open('GeoHeatMap_test.html')  # 默认浏览器打开
+    webbrowser.open('GeoHeatMap_test.html')  # 默认浏览器打开..
 
 def scatterMap():
     pass
