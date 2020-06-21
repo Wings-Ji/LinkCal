@@ -1,0 +1,8 @@
+{
+  "广东": ["maps/guangdong", "js"],
+  "安徽": ["maps/anhui", "js"],
+  "福建": ["maps/fujian", "js"],
+  "甘肃": ["maps/gansu", "js"],
+  "广西": ["maps/guangxi", "js"],
+  "贵州": ["maps/guizhou", "js"]
+}

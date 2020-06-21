@@ -1,0 +1,2728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1147</width>
+    <height>837</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>200</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>卫星链路计算 - Designed by CMDI</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../Documents/CMDI/07 素材/03 icon/卫星.png</normaloff>../../Documents/CMDI/07 素材/03 icon/卫星.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>6.000000000000000</double>
+  </property>
+  <property name="whatsThis">
+   <string/>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_15">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>初始界面</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>输入信息表</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="text">
+         <string>计算结果</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <property name="editable">
+         <bool>false</bool>
+        </property>
+        <property name="currentText">
+         <string>中文</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>中文</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>English</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="text">
+         <string>计算结果</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>初始界面</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>290</y>
+          <width>565</width>
+          <height>133</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+          <horstretch>11</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>链路两端站址信息</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="title">
+            <string>本端</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>省</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="ledit_bd_province">
+              <property name="text">
+               <string>西藏</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>市</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="ledit_bd_city">
+              <property name="text">
+               <string>拉萨</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="title">
+            <string>对端</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="ledit_dd_city">
+              <property name="text">
+               <string>北京</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="ledit_dd_province">
+              <property name="text">
+               <string>北京</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>市</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>省</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_setSite">
+           <property name="text">
+            <string>站址确认</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>130</y>
+          <width>301</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>仿宋</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>卫星链路计算器</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_42">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>220</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>仿宋</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Made By CMDI</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>输入信息</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>972</width>
+             <height>1257</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QGroupBox" name="groupBox_5">
+              <property name="title">
+               <string>地面站参数</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QGroupBox" name="groupBox_8">
+                   <property name="title">
+                    <string>对端</string>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_31">
+                    <item>
+                     <widget class="QLabel" name="lbl_dd_province">
+                      <property name="text">
+                       <string>   西藏</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="lbl_dd_city">
+                      <property name="text">
+                       <string>   拉萨</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QGroupBox" name="groupBox_7">
+                   <property name="title">
+                    <string>本端</string>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_32">
+                    <item>
+                     <widget class="QLabel" name="lbl_bd_province">
+                      <property name="text">
+                       <string>   西藏</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="lbl_bd_city">
+                      <property name="text">
+                       <string>   拉萨</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_9">
+                 <property name="title">
+                  <string>天线尺寸（m）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <widget class="QLabel" name="label_9">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_atn_bd_d">
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_10">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_atn_dd_d">
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_10">
+                 <property name="title">
+                  <string>天线效率</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_6">
+                  <item>
+                   <widget class="QLabel" name="label_11">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledit_bd_Atnef">
+                    <property name="text">
+                     <string>0.65</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_12">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledit_dd_Atnef">
+                    <property name="text">
+                     <string>0.65</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_12">
+                 <property name="title">
+                  <string>指向误差损耗（dB）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_8">
+                  <item>
+                   <widget class="QLabel" name="label_15">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_loss_err_bd">
+                    <property name="text">
+                     <string>0.2</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_16">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_loss_err_dd">
+                    <property name="text">
+                     <string>0.2</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_13">
+                 <property name="title">
+                  <string>功放最大发射功率（W）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_9">
+                  <item>
+                   <widget class="QLabel" name="label_17">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_13">
+                    <property name="text">
+                     <string>40</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_18">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_14">
+                    <property name="text">
+                     <string>40</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_14">
+                 <property name="title">
+                  <string>功放回退（多载波情况下）（dB）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_10">
+                  <item>
+                   <widget class="QLabel" name="label_19">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_15">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_20">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_16">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_15">
+                 <property name="title">
+                  <string>功放至馈源插入损耗（dB）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_11">
+                  <item>
+                   <widget class="QLabel" name="label_21">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_loss_Amplifier2feed_bd">
+                    <property name="text">
+                     <string>0.5</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_22">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_loss_Amplifier2feed_dd">
+                    <property name="text">
+                     <string>0.5</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_16">
+                 <property name="title">
+                  <string>是否有UPC</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_12">
+                  <item>
+                   <widget class="QCheckBox" name="checkBox">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QCheckBox" name="checkBox_2">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_19">
+                 <property name="title">
+                  <string>UPC调整范围（dB）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_18">
+                  <item>
+                   <widget class="QLabel" name="label_31">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_23">
+                    <property name="text">
+                     <string>6</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_32">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_24">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_20">
+                 <property name="title">
+                  <string>极化</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_3">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_33">
+                    <property name="text">
+                     <string>本端发</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QComboBox" name="comboBox_6">
+                    <item>
+                     <property name="text">
+                      <string>H</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>V</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="1" column="3">
+                   <widget class="QLabel" name="label_34">
+                    <property name="text">
+                     <string>对端收</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_35">
+                    <property name="text">
+                     <string>本端收</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="4">
+                   <widget class="QComboBox" name="comboBox_16">
+                    <property name="currentIndex">
+                     <number>1</number>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>H</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>V</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QLabel" name="label_36">
+                    <property name="text">
+                     <string>对端发</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="4">
+                   <widget class="QComboBox" name="coB_dd_re">
+                    <property name="currentText">
+                     <string>H</string>
+                    </property>
+                    <property name="currentIndex">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>H</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>V</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QComboBox" name="coB_bd_re">
+                    <property name="currentText">
+                     <string>V</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>H</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>V</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_21">
+                 <property name="title">
+                  <string>LNA/LNB噪声温度（°K）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_20">
+                  <item>
+                   <widget class="QLabel" name="label_39">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_t_n_bd_lna">
+                    <property name="text">
+                     <string>40</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_40">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_t_n_dd_lna">
+                    <property name="text">
+                     <string>40</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_22">
+                 <property name="title">
+                  <string>天线噪声温度（°K）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_21">
+                  <item>
+                   <widget class="QLabel" name="label_43">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_t_n_bd">
+                    <property name="text">
+                     <string>60</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_44">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_t_n_dd">
+                    <property name="text">
+                     <string>60</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_23">
+                 <property name="title">
+                  <string>LNA/LNB插入损耗(dB)</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_22">
+                  <item>
+                   <widget class="QLabel" name="label_45">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_loss_bd_lna">
+                    <property name="text">
+                     <string>0.3</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_46">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_loss_dd_lna">
+                    <property name="text">
+                     <string>0.3</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_25">
+                 <property name="title">
+                  <string>海拔(km）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_24">
+                  <item>
+                   <widget class="QLabel" name="label_49">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_alt_bd">
+                    <property name="text">
+                     <string>3840</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_50">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_alt_dd">
+                    <property name="text">
+                     <string>3840</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_24">
+                 <property name="title">
+                  <string>蒸气密度（g/m3）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_23">
+                  <item>
+                   <widget class="QLabel" name="label_47">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="va_den_bd">
+                    <property name="text">
+                     <string>4</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_48">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="va_den_dd">
+                    <property name="text">
+                     <string>4</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_27">
+                 <property name="title">
+                  <string>温度（℃）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_26">
+                  <item>
+                   <widget class="QLabel" name="label_53">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_T_bd">
+                    <property name="text">
+                     <string>30</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_54">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_T_dd">
+                    <property name="text">
+                     <string>30</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_26">
+                 <property name="title">
+                  <string>大气压（Kpa）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_25">
+                  <item>
+                   <widget class="QLabel" name="label_51">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="bd_atmph">
+                    <property name="text">
+                     <string>101.3</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_52">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="bd_atmph_2">
+                    <property name="text">
+                     <string>101.3</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_6">
+              <property name="title">
+               <string>载波参数</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <widget class="QGroupBox" name="groupBox_17">
+                 <property name="title">
+                  <string>载波间隔系数</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_14">
+                  <item>
+                   <widget class="QLabel" name="label_25">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledit_bd_CarrierSpacingFactor">
+                    <property name="text">
+                     <string>1.05</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_26">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledit_dd_CarrierSpacingFactor">
+                    <property name="text">
+                     <string>1.05</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_28">
+                 <property name="title">
+                  <string>符号速率（ksps）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_13">
+                  <item>
+                   <widget class="QLabel" name="label_27">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledit_bd_CarrierSymbleRate">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>2526</string>
+                    </property>
+                    <property name="frame">
+                     <bool>false</bool>
+                    </property>
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_28">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledit_dd_CarrierSymbleRate">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>2526</string>
+                    </property>
+                    <property name="frame">
+                     <bool>false</bool>
+                    </property>
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_11">
+                 <property name="title">
+                  <string>FEC编码</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_7">
+                  <item>
+                   <widget class="QLabel" name="label_13">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledit_bd_FECcode">
+                    <property name="text">
+                     <string>0.66</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_14">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledit_dd_FECcode">
+                    <property name="text">
+                     <string>0.66</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_29">
+                 <property name="title">
+                  <string>调制方式</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_17">
+                  <item>
+                   <widget class="QLabel" name="label_37">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="cmbBox_bd_modu">
+                    <item>
+                     <property name="text">
+                      <string>8PSK</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>BPSK</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>QPSK</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>8-ARY</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>16-ARY</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>32-ARY</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_38">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="cmbBox_dd_modu">
+                    <item>
+                     <property name="text">
+                      <string>8PSK</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>BPSK</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>QPSK</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>8-ARY</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>16-ARY</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>32-ARY</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_30">
+                 <property name="title">
+                  <string>信息速率（kbps）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_19">
+                  <item>
+                   <widget class="QLabel" name="label_55">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledit_bd_infoRate">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="text">
+                     <string>5000</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_56">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledit_dd_infoRate">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="text">
+                     <string>5000</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_32">
+                 <property name="title">
+                  <string>开销比例</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_28">
+                  <item>
+                   <widget class="QLabel" name="label_59">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledit_bd_spendingRatio">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_60">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledit_dd_spendingRatio">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_31">
+                 <property name="title">
+                  <string>实际承载信息速率</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_27">
+                  <item>
+                   <widget class="QLabel" name="label_57">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledit_bd_actualCarryingRate">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>5000</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_58">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledit_dd_actualCarryingRate">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>5000</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_33">
+                 <property name="title">
+                  <string>发射/接收频率（GHz）</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_4">
+                  <item row="0" column="3">
+                   <widget class="QLineEdit" name="ledit_freq_tr_dd">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>14.25</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="3">
+                   <widget class="QLineEdit" name="lineEdit_55">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>12.25</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="ledit_freq_Re_bd">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>12.25</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLabel" name="label_62">
+                    <property name="text">
+                     <string>对端发</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_63">
+                    <property name="text">
+                     <string>本端收</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_61">
+                    <property name="text">
+                     <string>本端发</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLineEdit" name="ledit_freq_tr_bd">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>14.25</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QLabel" name="label_64">
+                    <property name="text">
+                     <string>对端收</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_34">
+                 <property name="title">
+                  <string>门限误码率</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_36">
+                  <item>
+                   <widget class="QLabel" name="label_83">
+                    <property name="text">
+                     <string>本端收</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_MX_errRt_bd">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>0.0000001</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_84">
+                    <property name="text">
+                     <string>对端收</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_MX_errRt_dd">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>0.0000001</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_43">
+                 <property name="title">
+                  <string>Eb/No要求（dB）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_37">
+                  <item>
+                   <widget class="QLabel" name="label_85">
+                    <property name="text">
+                     <string>本端收</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_dd_EbN0_2">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>3.50</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_86">
+                    <property name="text">
+                     <string>对端收</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ledt_dd_EbN0">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>3.50</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_45">
+                 <property name="title">
+                  <string>波段</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_6">
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_89">
+                    <property name="text">
+                     <string>本端收</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QComboBox" name="comboBox_15">
+                    <item>
+                     <property name="text">
+                      <string>C</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ku</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ka</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>L</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>F</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Q</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>V</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QLabel" name="label_90">
+                    <property name="text">
+                     <string>对端发</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="3">
+                   <widget class="QLabel" name="label_91">
+                    <property name="text">
+                     <string>对端收</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_92">
+                    <property name="text">
+                     <string>本端发</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QComboBox" name="comboBox_18">
+                    <item>
+                     <property name="text">
+                      <string>C</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ku</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ka</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>L</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>F</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Q</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>V</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="0" column="4">
+                   <widget class="QComboBox" name="comboBox_19">
+                    <item>
+                     <property name="text">
+                      <string>C</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ku</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ka</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>L</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>F</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Q</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>V</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="1" column="4">
+                   <widget class="QComboBox" name="comboBox_20">
+                    <item>
+                     <property name="text">
+                      <string>C</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ku</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ka</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>L</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>F</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Q</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>V</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_44">
+                 <property name="title">
+                  <string>网络名称</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_38">
+                  <item>
+                   <widget class="QLabel" name="label_87">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_73">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>应急网</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_88">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_74">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>应急网</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_46">
+                 <property name="title">
+                  <string>可用度（%）</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_39">
+                  <item>
+                   <widget class="QLabel" name="label_97">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_79">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>50</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_98">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_80">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>50</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_47">
+                 <property name="title">
+                  <string>预留链路余量</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_40">
+                  <item>
+                   <widget class="QLabel" name="label_99">
+                    <property name="text">
+                     <string>本端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_81">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_100">
+                    <property name="text">
+                     <string>对端</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_82">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_4">
+              <property name="title">
+               <string>转发器参数</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <widget class="QGroupBox" name="groupBox_51">
+                 <property name="title">
+                  <string>采用的同步轨道卫星</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_44">
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_89">
+                    <property name="inputMask">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>中星6A</string>
+                    </property>
+                    <property name="frame">
+                     <bool>false</bool>
+                    </property>
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_50">
+                 <property name="title">
+                  <string>卫星经度</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_43">
+                  <item>
+                   <widget class="QLineEdit" name="ledit_sat_log">
+                    <property name="text">
+                     <string>125</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_102">
+                    <property name="text">
+                     <string>东经</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_49">
+                 <property name="title">
+                  <string>转发器带宽</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_42">
+                  <item>
+                   <widget class="QLineEdit" name="ledt_zfqwidth">
+                    <property name="text">
+                     <string>54</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_103">
+                    <property name="text">
+                     <string>MHz</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_48">
+                 <property name="title">
+                  <string>输入回退</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_41">
+                  <item>
+                   <widget class="QLineEdit" name="ledt_in_FB">
+                    <property name="text">
+                     <string>6</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_101">
+                    <property name="text">
+                     <string>dB</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_18">
+                 <property name="title">
+                  <string>输出回退</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_16">
+                  <item>
+                   <widget class="QLineEdit" name="ledt_out_FB">
+                    <property name="text">
+                     <string>3</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_29">
+                    <property name="text">
+                     <string>dB</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_52">
+                 <property name="title">
+                  <string>上行极化干扰常数</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_45">
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_90">
+                    <property name="text">
+                     <string>108.1</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_55">
+                 <property name="title">
+                  <string>上行邻星干扰常数</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_48">
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_93">
+                    <property name="text">
+                     <string>112.1</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_54">
+                 <property name="title">
+                  <string>上行交调干扰常数</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_47">
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_92">
+                    <property name="text">
+                     <string>108</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_56">
+                 <property name="title">
+                  <string>下行极化干扰常数</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_49">
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_94">
+                    <property name="text">
+                     <string>106</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_57">
+                 <property name="title">
+                  <string>下行邻星干扰常数</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_50">
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_95">
+                    <property name="text">
+                     <string>75.5</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_58">
+                 <property name="title">
+                  <string>下行交调干扰常数</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_51">
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_96">
+                    <property name="text">
+                     <string>104</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_returnHome">
+                 <property name="text">
+                  <string>返回初始界面</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_5">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>批量计算</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_singleCalculat">
+                 <property name="text">
+                  <string>单次计算</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>计算结果</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_30">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_2">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>993</width>
+             <height>763</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_29">
+            <item>
+             <widget class="QGroupBox" name="groupBox_35">
+              <property name="title">
+               <string>本端发计算结果</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <widget class="QGroupBox" name="groupBox_37">
+                 <property name="title">
+                  <string>GroupBox</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_5">
+                  <item row="7" column="0">
+                   <widget class="QLabel" name="label_68">
+                    <property name="text">
+                     <string>收天线口径</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="label_70">
+                    <property name="text">
+                     <string>发天线口径</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLabel" name="label_67">
+                    <property name="text">
+                     <string>功放输出功率</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth"/>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_5"/>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_5">
+                    <property name="text">
+                     <string>总C/N</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="2">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_6"/>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_65">
+                    <property name="text">
+                     <string>分配带宽</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_66">
+                    <property name="text">
+                     <string>每载波占转发器带宽</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="label_69">
+                    <property name="text">
+                     <string>功带比</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_7"/>
+                  </item>
+                  <item row="7" column="2">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_10"/>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_30">
+                    <property name="text">
+                     <string>每载波占转发器功率</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="0">
+                   <widget class="QLabel" name="label_23">
+                    <property name="text">
+                     <string>偏轴辐射功率余量</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="2">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_9"/>
+                  </item>
+                  <item row="5" column="2">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_12"/>
+                  </item>
+                  <item row="6" column="2">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_11"/>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_24">
+                    <property name="text">
+                     <string>预留余量之外的链路余量</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_8"/>
+                  </item>
+                  <item row="9" column="2">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_13"/>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_36">
+              <property name="title">
+               <string>对端发计算结果</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <item>
+                <widget class="QGroupBox" name="groupBox_38">
+                 <property name="title">
+                  <string>GroupBox</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_7">
+                  <item row="6" column="4">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_17"/>
+                  </item>
+                  <item row="7" column="4">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_22"/>
+                  </item>
+                  <item row="8" column="0" colspan="4">
+                   <widget class="QLabel" name="label_74">
+                    <property name="text">
+                     <string>每载波占转发器功率</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="13" column="4">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_18"/>
+                  </item>
+                  <item row="11" column="4">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_14"/>
+                  </item>
+                  <item row="10" column="4">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_16"/>
+                  </item>
+                  <item row="12" column="0" colspan="4">
+                   <widget class="QLabel" name="label_72">
+                    <property name="text">
+                     <string>功放输出功率</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="15" column="4">
+                   <widget class="QLineEdit" name="ledit_dd_allocatedBandwidth"/>
+                  </item>
+                  <item row="9" column="4">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_15"/>
+                  </item>
+                  <item row="10" column="0" colspan="4">
+                   <widget class="QLabel" name="label_78">
+                    <property name="text">
+                     <string>发天线口径</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="4">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_4"/>
+                  </item>
+                  <item row="6" column="0" colspan="4">
+                   <widget class="QLabel" name="label_80">
+                    <property name="text">
+                     <string>分配带宽</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="0" colspan="4">
+                   <widget class="QLabel" name="label_73">
+                    <property name="text">
+                     <string>功带比</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_75">
+                    <property name="text">
+                     <string>预留余量之外的链路余量</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="4">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_20"/>
+                  </item>
+                  <item row="7" column="0" colspan="4">
+                   <widget class="QLabel" name="label_79">
+                    <property name="text">
+                     <string>每载波占转发器带宽</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="11" column="0" colspan="4">
+                   <widget class="QLabel" name="label_76">
+                    <property name="text">
+                     <string>收天线口径</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="15" column="0">
+                   <widget class="QLabel" name="label_7">
+                    <property name="text">
+                     <string>双向载波在星上功率比（dB）</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="4">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_19"/>
+                  </item>
+                  <item row="13" column="0" colspan="4">
+                   <widget class="QLabel" name="label_77">
+                    <property name="text">
+                     <string>偏轴辐射功率余量</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0" colspan="4">
+                   <widget class="QLabel" name="label_71">
+                    <property name="text">
+                     <string>总C/N</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="12" column="4">
+                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_21"/>
+                  </item>
+                  <item row="16" column="0">
+                   <widget class="QLabel" name="label_81">
+                    <property name="text">
+                     <string>载波叠加总功带比</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="16" column="4">
+                   <widget class="QLineEdit" name="ledit_dd_allocatedBandwidth_2"/>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_5">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>可视化</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_33">
+        <item>
+         <widget class="QGroupBox" name="groupBox_39">
+          <property name="title">
+           <string>GroupBox</string>
+          </property>
+          <widget class="QPushButton" name="pushButton">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>80</y>
+             <width>130</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>热力图(保存桌面)</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_40">
+          <property name="title">
+           <string>GroupBox</string>
+          </property>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>330</y>
+             <width>241</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>生成频率占用图</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>100</y>
+             <width>72</width>
+             <height>15</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>起始频率</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lnedt_startFreq">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>100</y>
+             <width>113</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>14131000</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>160</y>
+             <width>72</width>
+             <height>15</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>终止频率</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lnedt_endFreq">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>160</y>
+             <width>113</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>14160000</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lnedt_step">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>200</y>
+             <width>113</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>100</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_82">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>200</y>
+             <width>72</width>
+             <height>15</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>精度(kHz)</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_8">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>280</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选择文件</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="ledit_excelPath">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>280</y>
+             <width>291</width>
+             <height>21</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_setSite</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setSite()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>434</x>
+     <y>354</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>809</x>
+     <y>819</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_singleCalculat</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>singleCalculate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>847</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>829</x>
+     <y>816</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_returnHome</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>returnHome()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>847</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>809</x>
+     <y>750</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>jumpInput()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>83</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>75</x>
+     <y>495</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>jumpResult()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>61</x>
+     <y>97</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>55</x>
+     <y>456</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>returnHome()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>104</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>98</x>
+     <y>536</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>heatMap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>166</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>44</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>createFreqMap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>937</x>
+     <y>377</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>961</x>
+     <y>830</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>getFilePath()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>778</x>
+     <y>339</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>721</x>
+     <y>832</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>setSite()</slot>
+  <slot>singleCalculate()</slot>
+  <slot>returnHome()</slot>
+  <slot>jumpInput()</slot>
+  <slot>jumpResult()</slot>
+  <slot>heatMap()</slot>
+  <slot>createFreqMap()</slot>
+  <slot>getFilePath()</slot>
+ </slots>
+</ui>
