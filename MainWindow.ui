@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1147</width>
-    <height>837</height>
+    <width>1051</width>
+    <height>762</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -38,74 +38,76 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_15">
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <widget class="QPushButton" name="pushButton_2">
-        <property name="text">
-         <string>初始界面</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_3">
-        <property name="text">
-         <string>输入信息表</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_6">
-        <property name="text">
-         <string>计算结果</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="verticalSpacer">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QComboBox" name="comboBox">
-        <property name="editable">
-         <bool>false</bool>
-        </property>
-        <property name="currentText">
-         <string>中文</string>
-        </property>
-        <item>
+     <widget class="QFrame" name="">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
          <property name="text">
+          <string>初始界面</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="text">
+          <string>输入信息表</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="text">
+          <string>计算结果</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
           <string>中文</string>
          </property>
-        </item>
-        <item>
+         <item>
+          <property name="text">
+           <string>中文</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>English</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_7">
          <property name="text">
-          <string>English</string>
+          <string>计算结果</string>
          </property>
-        </item>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_7">
-        <property name="text">
-         <string>计算结果</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </item>
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -282,8 +284,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>972</width>
-             <height>1257</height>
+             <width>876</width>
+             <height>1215</height>
             </rect>
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -468,7 +470,7 @@
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_13">
+                   <widget class="QLineEdit" name="hpa_mp_bd">
                     <property name="text">
                      <string>40</string>
                     </property>
@@ -482,7 +484,7 @@
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_14">
+                   <widget class="QLineEdit" name="hpa_mp_dd">
                     <property name="text">
                      <string>40</string>
                     </property>
@@ -713,7 +715,7 @@
                   <item row="1" column="1">
                    <widget class="QComboBox" name="coB_bd_re">
                     <property name="currentText">
-                     <string>V</string>
+                     <string>H</string>
                     </property>
                     <item>
                      <property name="text">
@@ -1358,7 +1360,7 @@
                    </widget>
                   </item>
                   <item row="1" column="3">
-                   <widget class="QLineEdit" name="lineEdit_55">
+                   <widget class="QLineEdit" name="ledit_freq_re_dd">
                     <property name="enabled">
                      <bool>true</bool>
                     </property>
@@ -1475,7 +1477,7 @@
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="ledt_dd_EbN0_2">
+                   <widget class="QLineEdit" name="ledt_bd_EbN0">
                     <property name="enabled">
                      <bool>true</bool>
                     </property>
@@ -1797,7 +1799,7 @@
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_81">
+                   <widget class="QLineEdit" name="bd_llyl">
                     <property name="enabled">
                      <bool>true</bool>
                     </property>
@@ -1814,7 +1816,7 @@
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_82">
+                   <widget class="QLineEdit" name="dd_llyl">
                     <property name="enabled">
                      <bool>true</bool>
                     </property>
@@ -1972,7 +1974,7 @@
                  </property>
                  <layout class="QHBoxLayout" name="horizontalLayout_45">
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_90">
+                   <widget class="QLineEdit" name="upFac_jh">
                     <property name="text">
                      <string>108.1</string>
                     </property>
@@ -1988,7 +1990,7 @@
                  </property>
                  <layout class="QHBoxLayout" name="horizontalLayout_48">
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_93">
+                   <widget class="QLineEdit" name="upFac_s">
                     <property name="text">
                      <string>112.1</string>
                     </property>
@@ -2004,7 +2006,7 @@
                  </property>
                  <layout class="QHBoxLayout" name="horizontalLayout_47">
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_92">
+                   <widget class="QLineEdit" name="upFac_j">
                     <property name="text">
                      <string>108</string>
                     </property>
@@ -2020,7 +2022,7 @@
                  </property>
                  <layout class="QHBoxLayout" name="horizontalLayout_49">
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_94">
+                   <widget class="QLineEdit" name="downFac_jh">
                     <property name="text">
                      <string>106</string>
                     </property>
@@ -2036,7 +2038,7 @@
                  </property>
                  <layout class="QHBoxLayout" name="horizontalLayout_50">
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_95">
+                   <widget class="QLineEdit" name="downFac_s">
                     <property name="text">
                      <string>75.5</string>
                     </property>
@@ -2052,7 +2054,7 @@
                  </property>
                  <layout class="QHBoxLayout" name="horizontalLayout_51">
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_96">
+                   <widget class="QLineEdit" name="downFac_j">
                     <property name="text">
                      <string>104</string>
                     </property>
@@ -2122,8 +2124,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>993</width>
-             <height>763</height>
+             <width>897</width>
+             <height>688</height>
             </rect>
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_29">
@@ -2161,10 +2163,10 @@
                    </widget>
                   </item>
                   <item row="0" column="2">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth"/>
+                   <widget class="QLineEdit" name="ledit1"/>
                   </item>
                   <item row="1" column="2">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_5"/>
+                   <widget class="QLineEdit" name="ledit2"/>
                   </item>
                   <item row="0" column="0">
                    <widget class="QLabel" name="label_5">
@@ -2174,7 +2176,7 @@
                    </widget>
                   </item>
                   <item row="4" column="2">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_6"/>
+                   <widget class="QLineEdit" name="ledit5"/>
                   </item>
                   <item row="2" column="0">
                    <widget class="QLabel" name="label_65">
@@ -2198,10 +2200,10 @@
                    </widget>
                   </item>
                   <item row="2" column="2">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_7"/>
+                   <widget class="QLineEdit" name="ledit3"/>
                   </item>
                   <item row="7" column="2">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_10"/>
+                   <widget class="QLineEdit" name="ledit8"/>
                   </item>
                   <item row="4" column="0">
                    <widget class="QLabel" name="label_30">
@@ -2218,13 +2220,13 @@
                    </widget>
                   </item>
                   <item row="8" column="2">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_9"/>
+                   <widget class="QLineEdit" name="ledit9"/>
                   </item>
                   <item row="5" column="2">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_12"/>
+                   <widget class="QLineEdit" name="ledit6"/>
                   </item>
                   <item row="6" column="2">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_11"/>
+                   <widget class="QLineEdit" name="ledit7"/>
                   </item>
                   <item row="1" column="0">
                    <widget class="QLabel" name="label_24">
@@ -2234,10 +2236,10 @@
                    </widget>
                   </item>
                   <item row="3" column="2">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_8"/>
+                   <widget class="QLineEdit" name="ledit4"/>
                   </item>
                   <item row="9" column="2">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_13"/>
+                   <widget class="QLineEdit" name="ledit10"/>
                   </item>
                  </layout>
                 </widget>
@@ -2271,10 +2273,10 @@
                  </property>
                  <layout class="QGridLayout" name="gridLayout_7">
                   <item row="6" column="4">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_17"/>
+                   <widget class="QLineEdit" name="ledit13"/>
                   </item>
                   <item row="7" column="4">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_22"/>
+                   <widget class="QLineEdit" name="ledit14"/>
                   </item>
                   <item row="8" column="0" colspan="4">
                    <widget class="QLabel" name="label_74">
@@ -2284,13 +2286,13 @@
                    </widget>
                   </item>
                   <item row="13" column="4">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_18"/>
+                   <widget class="QLineEdit" name="ledit20"/>
                   </item>
                   <item row="11" column="4">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_14"/>
+                   <widget class="QLineEdit" name="ledit18"/>
                   </item>
                   <item row="10" column="4">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_16"/>
+                   <widget class="QLineEdit" name="ledit17"/>
                   </item>
                   <item row="12" column="0" colspan="4">
                    <widget class="QLabel" name="label_72">
@@ -2300,10 +2302,10 @@
                    </widget>
                   </item>
                   <item row="15" column="4">
-                   <widget class="QLineEdit" name="ledit_dd_allocatedBandwidth"/>
+                   <widget class="QLineEdit" name="ledit21"/>
                   </item>
                   <item row="9" column="4">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_15"/>
+                   <widget class="QLineEdit" name="ledit16"/>
                   </item>
                   <item row="10" column="0" colspan="4">
                    <widget class="QLabel" name="label_78">
@@ -2313,7 +2315,7 @@
                    </widget>
                   </item>
                   <item row="0" column="4">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_4"/>
+                   <widget class="QLineEdit" name="ledit11"/>
                   </item>
                   <item row="6" column="0" colspan="4">
                    <widget class="QLabel" name="label_80">
@@ -2337,7 +2339,7 @@
                    </widget>
                   </item>
                   <item row="3" column="4">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_20"/>
+                   <widget class="QLineEdit" name="ledit12"/>
                   </item>
                   <item row="7" column="0" colspan="4">
                    <widget class="QLabel" name="label_79">
@@ -2361,7 +2363,7 @@
                    </widget>
                   </item>
                   <item row="8" column="4">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_19"/>
+                   <widget class="QLineEdit" name="ledit15"/>
                   </item>
                   <item row="13" column="0" colspan="4">
                    <widget class="QLabel" name="label_77">
@@ -2378,7 +2380,7 @@
                    </widget>
                   </item>
                   <item row="12" column="4">
-                   <widget class="QLineEdit" name="ledit_bd_allocatedBandwidth_21"/>
+                   <widget class="QLineEdit" name="ledit19"/>
                   </item>
                   <item row="16" column="0">
                    <widget class="QLabel" name="label_81">
@@ -2388,7 +2390,7 @@
                    </widget>
                   </item>
                   <item row="16" column="4">
-                   <widget class="QLineEdit" name="ledit_dd_allocatedBandwidth_2"/>
+                   <widget class="QLineEdit" name="ledit22"/>
                   </item>
                  </layout>
                 </widget>
@@ -2412,6 +2414,291 @@
            </layout>
           </widget>
          </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>附加页</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_34">
+        <item>
+         <widget class="QGroupBox" name="groupBox_41">
+          <property name="title">
+           <string>俯仰角计算</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_95">
+             <property name="text">
+              <string>地面站点纬度</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_93">
+             <property name="text">
+              <string>卫星定点经度</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="pushButton_9">
+             <property name="text">
+              <string>开始计算</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lat_station">
+             <property name="text">
+              <string>29.71</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QTextBrowser" name="textBrowser">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_94">
+             <property name="text">
+              <string>地面站站点经度</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="log_sat">
+             <property name="text">
+              <string>125</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="log_station">
+             <property name="text">
+              <string>91.11</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0" colspan="2">
+            <spacer name="verticalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>600</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_42">
+          <property name="title">
+           <string>接收系统</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QFrame" name="gridFrame">
+             <layout class="QGridLayout" name="gridLayout_10">
+              <item row="8" column="1">
+               <widget class="QLineEdit" name="lineEdit_11">
+                <property name="text">
+                 <string>60</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="2">
+               <widget class="QLabel" name="label_116">
+                <property name="text">
+                 <string>dB</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_96">
+                <property name="text">
+                 <string>接收天线口径</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="1">
+               <widget class="QLineEdit" name="lineEdit">
+                <property name="text">
+                 <string>0.3</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <widget class="QLabel" name="label_113">
+                <property name="text">
+                 <string>米</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="2">
+               <widget class="QLabel" name="label_112">
+                <property name="text">
+                 <string>dBK</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="0">
+               <widget class="QLabel" name="label_111">
+                <property name="text">
+                 <string>天线噪声温度</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="0">
+               <widget class="QLabel" name="label_109">
+                <property name="text">
+                 <string>LNA前向损耗</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_104">
+                <property name="text">
+                 <string>接收天线效率</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_105">
+                <property name="text">
+                 <string>下行频率</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="label_110">
+                <property name="text">
+                 <string>LNA噪声温度</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QLineEdit" name="lineEdit_5">
+                <property name="text">
+                 <string>40</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QLineEdit" name="lineEdit_4">
+                <property name="text">
+                 <string>12.5</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="lineEdit_2">
+                <property name="text">
+                 <string>65</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="QLabel" name="label_115">
+                <property name="text">
+                 <string>%</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="lineEdit_3">
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="2">
+               <widget class="QLabel" name="label_117">
+                <property name="text">
+                 <string>K</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <widget class="QLabel" name="label_114">
+                <property name="text">
+                 <string>GHz</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_10">
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="textBrowser_2">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>600</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>165</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>28</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
         </item>
        </layout>
       </widget>
@@ -2577,8 +2864,8 @@
    <slot>setSite()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>434</x>
-     <y>354</y>
+     <x>887</x>
+     <y>412</y>
     </hint>
     <hint type="destinationlabel">
      <x>809</x>
@@ -2593,8 +2880,8 @@
    <slot>singleCalculate()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>847</x>
-     <y>87</y>
+     <x>979</x>
+     <y>1238</y>
     </hint>
     <hint type="destinationlabel">
      <x>829</x>
@@ -2609,60 +2896,12 @@
    <slot>returnHome()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>847</x>
-     <y>87</y>
+     <x>979</x>
+     <y>1168</y>
     </hint>
     <hint type="destinationlabel">
      <x>809</x>
      <y>750</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_3</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>jumpInput()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>83</x>
-     <y>55</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>75</x>
-     <y>495</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_6</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>jumpResult()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>61</x>
-     <y>97</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>55</x>
-     <y>456</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>returnHome()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>104</x>
-     <y>30</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>98</x>
-     <y>536</y>
     </hint>
    </hints>
   </connection>
@@ -2689,8 +2928,8 @@
    <slot>createFreqMap()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>937</x>
-     <y>377</y>
+     <x>889</x>
+     <y>403</y>
     </hint>
     <hint type="destinationlabel">
      <x>961</x>
@@ -2705,12 +2944,44 @@
    <slot>getFilePath()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>778</x>
-     <y>339</y>
+     <x>741</x>
+     <y>353</y>
     </hint>
     <hint type="destinationlabel">
      <x>721</x>
      <y>832</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FYJ()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>242</x>
+     <y>310</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>758</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>RcvSys()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>538</x>
+     <y>257</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>532</x>
+     <y>757</y>
     </hint>
    </hints>
   </connection>
@@ -2724,5 +2995,7 @@
   <slot>heatMap()</slot>
   <slot>createFreqMap()</slot>
   <slot>getFilePath()</slot>
+  <slot>FYJ()</slot>
+  <slot>RcvSys()</slot>
  </slots>
 </ui>

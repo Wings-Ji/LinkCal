@@ -42,11 +42,17 @@ class MyWindow(QMainWindow, Ui_MainWindow):
 
     def singleCalculate(self):
         try:
-            methods.total_var_cal(self) #计算所有变量
+            methods.getVarDict(self) #计算所有变量
         except Exception as e :
             print("捕获异常:",e)
-
+        methods.setRes(self)
         self.tabWidget.setCurrentIndex(2)  # 跳转到计算结果页面
+
+    def FYJ(self):#计算俯仰角
+        methods.FYJ(self)
+
+    def RcvSys(self):
+        methods.RcvSys(self)
 
     #可视化功能：
     def heatMap(self):
